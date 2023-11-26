@@ -14,17 +14,17 @@ Você também pode compilar o pacote de instalação para a plataforma correspon
     go build
 ```
 
-### release版本:
+### release versão:
 
-系统采用前后端分离的方式开发： radius server后端 + 管理系统前端
+O sistema é desenvolvido separando o front-end e o back-end: back-end do servidor radius + front-end do sistema de gerenciamento
 
-管理系统前端需要运行在web服务器环境(nginx, tomcat等)，radius server后端是编译后的二进制版本可按照下述方式运行
+O front-end do sistema de gerenciamento precisa ser executado em um ambiente de servidor web (nginx, tomcat, etc.) O back-end do servidor radius é uma versão binária compilada que pode ser executada da seguinte forma:
 
-## yh-radius系统介绍
+## yh-radius introdução do sistema
 
-编译完成，复制以下目录或者文件至你的运行目录: yh-radius, attributes, config, startup.sh, shutdown.sh
+Após a conclusão da compilação, copie os seguintes diretórios ou arquivos para o diretório em execução: yh-radius, atributos, config, startup.sh, shutdown.sh
 
-目录结构如下:
+A estrutura do diretório é a seguinte:
  
     yh-radius
         |___ attributes
