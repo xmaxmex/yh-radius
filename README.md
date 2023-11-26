@@ -53,16 +53,16 @@ A estrutura do diretório é a seguinte:
 
 | Nome do campo | Valor padrão | Tipo | Descrição |
 | ------| ------ | ------ | ----- |
-| auth.port | 1812 | int |  radius认证端口  |
-| acct.port | 1813 | int |  radius计费端口  |
-| encrypt.key | Suporta strings hexadecimais com comprimentos de 16, 24 e 32 | string |  用于加密用户密码  |
-| radius.session.timeout | 604800 | int | 默认一周的秒数  |
-| limiter.limit | 100 | int | 用于限制每次添加到令牌桶中的token数量，间接控制go协程并发数量, 服务器环境可根据实际情况调整 |
-| limiter.burst | 1000 | int | 用于限制最多的可用token数量,间接控制go协程并发数量,服务器环境可根据实际情况调整  |
-| product.stage | debug | string | 控制gin日志，sql显示；可选值：test,debug,release 发布生产环境时请修改此配置为：release  |
+| auth.port | 1812 | int |  porta de autenticação radius  |
+| acct.port | 1813 | int |  porta de contas radius  |
+| encrypt.key | Suporta strings hexadecimais com comprimentos de 16, 24 e 32 | string |  Usado para criptografar senhas de usuários  |
+| radius.session.timeout | 604800 | int | Número padrão de segundos em uma semana  |
+| limiter.limit | 100 | int | Usado para limitar o número de tokens adicionados ao token bucket a cada vez e controlar indiretamente o número de corrotinas Go simultâneas.O ambiente do servidor pode ser ajustado de acordo com a situação real. |
+| limiter.burst | 1000 | int | Usado para limitar o número máximo de tokens disponíveis e controlar indiretamente o número de corrotinas go simultâneas.O ambiente do servidor pode ser ajustado de acordo com a situação real. |
+| product.stage | debug | string | Controle gin log, exibição sql; valores opcionais: teste, depuração, liberação. Ao liberar o ambiente de produção, modifique esta configuração para: liberação |
 
-## 数据库表结构
-数据库表定义在radius-v2.sql中
+## Estrutura da tabela do banco de dados
+A tabela do banco de dados é definida em radius-v2.sql
 
 ## 使用radius-web管理平台
 这里有一个可用的radius管理平台，实现了用户管理，套餐管理，nas管理，在线用户管理，管理员管理，角色管理等[yh-radius-web](https://github.com/cometowell/radius-web.git)
