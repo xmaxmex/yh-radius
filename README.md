@@ -64,17 +64,16 @@ A estrutura do diretório é a seguinte:
 ## Estrutura da tabela do banco de dados
 A tabela do banco de dados é definida em radius-v2.sql
 
-## 使用radius-web管理平台
-这里有一个可用的radius管理平台，实现了用户管理，套餐管理，nas管理，在线用户管理，管理员管理，角色管理等[yh-radius-web](https://github.com/cometowell/radius-web.git)
-web平台默认的登陆用户: admin/123456
+## Use a plataforma de gerenciamento radius-web
+Há uma plataforma de gerenciamento radius disponível aqui, que implementa gerenciamento de usuários, gerenciamento de pacotes, gerenciamento nas, gerenciamento de usuários online, gerenciamento de administrador, gerenciamento de funções, etc. O usuário de login padrão da plataforma web yh-radius-web é: admin/123456
 
-![首页](https://github.com/cometowell/yh-radius/raw/master/document/index.png)
-![用户管理](https://github.com/cometowell/yh-radius/raw/master/document/user.png)
-![套餐管理](https://github.com/cometowell/yh-radius/raw/master/document/product.png)
-![在线用户管理](https://github.com/cometowell/yh-radius/raw/master/document/online.png)
-![系统设置](https://github.com/cometowell/yh-radius/raw/master/document/system.png)
-![角色管理](https://github.com/cometowell/yh-radius/raw/master/document/role.png)
+![primeira página](https://github.com/cometowell/yh-radius/raw/master/document/index.png)
+![Gerenciamento de usuários](https://github.com/cometowell/yh-radius/raw/master/document/user.png)
+![Gerenciamento de pacotes](https://github.com/cometowell/yh-radius/raw/master/document/product.png)
+![Gerenciamento de usuários on-line](https://github.com/cometowell/yh-radius/raw/master/document/online.png)
+![Configurações de sistema](https://github.com/cometowell/yh-radius/raw/master/document/system.png)
+![gerenciamento de funções](https://github.com/cometowell/yh-radius/raw/master/document/role.png)
 
 
-## 许可协议
+## E é isto ai!
 [MIT](https://mit-license.org/)
