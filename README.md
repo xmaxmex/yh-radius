@@ -37,25 +37,25 @@ A estrutura do diretório é a seguinte:
     
         |__ shutdown.sh
 
-#### 在Linux系统中运行系统: 
+#### Executando o sistema em um sistema Linux:
 
 > chmod +x startup.sh
 
 > ./startup.sh
 
-#### Linux系统中停止系统:
+#### Parando o sistema no sistema Linux:
 
 > chmod +x shutdown.sh
 
 > ./shutdown.sh
 
-## 配置文件解释
+## Explicação do arquivo de configuração
 
-| 字段名 | 默认值 | 类型 | 描述 |
+| Nome do campo | Valor padrão | Tipo | Descrição |
 | ------| ------ | ------ | ----- |
 | auth.port | 1812 | int |  radius认证端口  |
 | acct.port | 1813 | int |  radius计费端口  |
-| encrypt.key | 支持16,24,32长度的十六进制字符串 | string |  用于加密用户密码  |
+| encrypt.key | Suporta strings hexadecimais com comprimentos de 16, 24 e 32 | string |  用于加密用户密码  |
 | radius.session.timeout | 604800 | int | 默认一周的秒数  |
 | limiter.limit | 100 | int | 用于限制每次添加到令牌桶中的token数量，间接控制go协程并发数量, 服务器环境可根据实际情况调整 |
 | limiter.burst | 1000 | int | 用于限制最多的可用token数量,间接控制go协程并发数量,服务器环境可根据实际情况调整  |
