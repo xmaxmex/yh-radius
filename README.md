@@ -1,12 +1,11 @@
-# yh-RADIUS系统
-yh-radius 是一个使用golang语言开发的radius协议实现，目前已适配华为，思科，中兴，RouterOS(MikroTik)以及标准协议，其他厂商协议后续陆续补充。
+# yh-RADIUS
+yh-radius é uma implementação de protocolo radius desenvolvida usando a linguagem golang. Atualmente está adaptado para Huawei, Cisco, ZTE, RouterOS (MikroTik) e protocolos padrão. Outros protocolos de fabricantes serão adicionados no futuro.
 
-## 编译安装
+## Compilar e instalar
 
-可以使用github上已经发布的release版本
+Você pode usar a versão de lançamento já lançada no github
 
-也可以自行编译相应平台的安装包：
-例如在windows平台下:
+Você também pode compilar o pacote de instalação para a plataforma correspondente: Por exemplo, na plataforma Windows:
 ```  
     cd source_code_dir
     set CGO_ENABLED=0
